@@ -20,11 +20,20 @@ img {
 }
 
 /*======================
-theme css
+header area css
 ========================*/
+#notice {
+  background: #ff6b6b;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+#notice {
+  margin: 0;
+}
 
 #header_area {
-  padding: 15px 0;
+  padding: 0 0 15px 0;
 }
 
 #header_area .col-md-9 ul {
