@@ -30,6 +30,8 @@ add_action( 'wp_enqueue_scripts', 'noman_add_google_fonts' );
 
 // Theme functions
 function noman_customizer_register($wp_customize){
+
+    // theme area function
     $wp_customize-> add_section('noman_header_area', array(
         'title' => __('Header Area', 'blogsite'),
         'description' => ('If you need to change header area then here it is.')
@@ -45,6 +47,30 @@ function noman_customizer_register($wp_customize){
         'setting' => 'noman_logo',
         'section' => 'noman_header_area',
     )));
+
+
+    // menu position options
+    $wp_customize -> add_section('noman_menu_option', array(
+        'title' => __('Menu Position', 'blogsite'),
+        'description' => ('Change menu postition as you need from here')
+    ));
+
+    $wp_customize -> add_setting('noman_menu_position', array(
+        'default' => 'right_menu'
+    ));
+
+    $wp_customize -> add_control('noman_menu_position',array(
+        'label' => 'Positioning Menu',
+        'description' => 'Set position of your logo as you want',
+        'setting' => 'noman_menu_position',
+        'section' => 'noman_menu_option',
+        'type' => 'radio',
+        'choices' => array(
+            'left_menu' => 'Left Menu',
+            'right_menu' => 'Right Menu',
+            'center_menu' => 'Center Menu'
+        )
+    ));
 };
 
 add_action('customize_register', 'noman_customizer_register');

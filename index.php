@@ -15,20 +15,20 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?> >
-<div id="header_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a href="mw-50">
-                    <img src="<?php echo get_theme_mod('noman_logo') ?>" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-               <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav') ); ?>
+    <header id="header_area" class="<?php echo get_theme_mod('noman_menu_position') ?>" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="mw-50">
+                        <img src="<?php echo get_theme_mod('noman_logo') ?>" alt="">
+                    </a>
+                </div>
+                <div class="col-md-9">
+                <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav') ); ?>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </header>
 <?php wp_footer(); ?>
 </body>
 </html>
