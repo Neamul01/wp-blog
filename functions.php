@@ -71,9 +71,27 @@ function noman_customizer_register($wp_customize){
             'center_menu' => 'Center Menu'
         )
     ));
+    // footer options
+    $wp_customize -> add_section('noman_footer_option', array(
+       'title' => __('Footer Position', 'blogsite'),
+       'description' => ('Change footer postition as you need from here')
+    ));
+    
+    $wp_customize -> add_setting('noman_compyright_section', array(
+       'default' => '&copy; Copyright 2023 | Noman'
+    ));
+    
+    $wp_customize -> add_control('noman_compyright_section',array(
+       'label' => 'copyright text',
+       'description' => 'Set position of your copyright text as you want',
+       'setting' => 'noman_compyright_section',
+       'section' => 'noman_footer_option',
+    ));
 };
 
 add_action('customize_register', 'noman_customizer_register');
+
+
 
 // Menu Register
 register_nav_menu( 'main_menu', __('Main Menu', 'blogsite') );

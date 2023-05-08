@@ -141,3 +141,25 @@ Menu Postition
 #header_area.center_menu .col-md-9 ul ul {
   text-align: left;
 }
+
+/*=============================
+Footer area
+==============================*/
+#copyright_area {
+  background: #292929;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#copyright_area p {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+}
+#copyright_area p a {
+  color: #ea1a70;
+}
+#copyright_area p a:hover {
+  text-decoration: underline;
+}
