@@ -1,0 +1,21 @@
+/*===========================================
+Theme Name: Blog site
+Theme URI: https://e-commerce-luxify.vercel.app/
+Author: Md. Neamul Haque
+Author URI: https://neamul-portfolio.vercel.app/
+Description: This is a blog site theme. It is my first ever created wordpress theme
+Requires at least: 5.3
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blogsite
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Blog site a Wordpress theme by (C) Md. Neamul Haque
+============================================*/
+
+body {
+  background: black;
+}
