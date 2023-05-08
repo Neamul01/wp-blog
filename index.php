@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="mw-50">
+                    <a href="<?php echo home_url() ?>" class="mw-50">
                         <img src="<?php echo get_theme_mod('noman_logo') ?>" alt="">
                     </a>
                 </div>
@@ -29,6 +29,16 @@
             </div>
         </div>
     </header>
+
+    <div id="body_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php the_content(); ?>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php wp_footer(); ?>
 </body>
 </html>

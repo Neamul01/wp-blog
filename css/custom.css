@@ -3,6 +3,8 @@ common css
 ==========================*/
 body {
   font-family: "Kaisei Decol", serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 h1,
 h2,
@@ -57,6 +59,7 @@ theme css
   text-align: left;
   top: 62px;
   width: 200px;
+  z-index: 99999;
 }
 #header_area .col-md-9 ul li:hover ul {
   left: 0px;
@@ -129,4 +132,7 @@ Menu Postition
 }
 #header_area.center_menu .col-md-9 ul {
   text-align: center;
+}
+#header_area.center_menu .col-md-9 ul ul {
+  text-align: left;
 }
