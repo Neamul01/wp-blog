@@ -19,6 +19,18 @@ img {
   max-width: 100%;
 }
 
+a.read_more {
+  color: #dd055f;
+  font-size: 12px;
+  text-decoration: navajowhite;
+  display: inline-block;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+a.read_more:hover {
+  color: #262626;
+}
+
 /*======================
 header area css
 ========================*/
