@@ -172,6 +172,9 @@ Index page style
 #body_area .blog_area {
   width: 100%;
   margin-bottom: 15px;
+  background: #ececec;
+  padding: 10px 20px;
+  border-radius: 0.4rem;
 }
 #body_area .post_thumb {
   overflow: hidden;
@@ -201,6 +204,38 @@ Index page style
 }
 #body_area .post_details h2 a:hover {
   color: #ea1a70;
+}
+/*=============================
+Page nav area
+==============================*/
+#page_nav {
+}
+#page_nav p.pages {
+  display: block;
+  width: 100%;
+  color: #ea1a70;
+  padding: 5px 0;
+  margin: 0;
+}
+#page_nav p.pages span {
+  display: inline-block;
+  padding: 0 5px;
+}
+#page_nav .page-numbers {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  background: #ea1a70;
+  padding: 4px 9px;
+  border-radius: 6px;
+}
+#page_nav .current,
+#page_nav .page-numbers:hover {
+  background: #262626;
+}
+#page_nav .prev,
+#page_nav .next {
+  font-size: 14px;
 }
 /*=============================
 Footer area

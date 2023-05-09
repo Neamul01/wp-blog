@@ -33,7 +33,12 @@ get_header();
                             _e('No post found');
                         endif;
                     ?>
-
+                    <div id="page_nav">
+                        <?php if('noman_page_nav'){noman_page_nav();} else{ ?>
+                            <?php next_posts_link() ?>
+                            <?php previous_posts_link() ?>
+                        <?php } ?>
+                    </div>
                     
                 </div>
                 <div class="col-md-3">
