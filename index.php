@@ -42,7 +42,7 @@ get_header();
                     
                 </div>
                 <div class="col-md-3">
-                    <h2>The sidebar</h2>
+                    <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>
