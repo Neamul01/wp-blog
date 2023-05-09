@@ -151,6 +151,45 @@ Menu Postition
   text-align: left;
 }
 
+/*============================
+Index page style
+=============================*/
+#body_area {
+  padding: 45px 0;
+}
+#body_area .blog_area {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb img {
+  transition: 1s;
+  width: 100%;
+  display: block;
+}
+#body_area .post_thumb:hover img {
+  transform: scale(1.1);
+}
+#body_area .post_details {
+  width: 100%;
+}
+#body_area .post_details h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+#body_area .post_details h2 a {
+  color: #262626;
+  text-decoration: none;
+  transition: o.5s;
+}
+#body_area .post_details h2 a:hover {
+  color: #ea1a70;
+}
 /*=============================
 Footer area
 ==============================*/
