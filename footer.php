@@ -2,6 +2,7 @@
 /**
  * Theme footer section
  * It will visible in every page
+ * need to require style in custom.css file
  */
 ?>
 <div id="footer_area">
