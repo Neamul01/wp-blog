@@ -57,7 +57,45 @@ function noman_customizer_register($wp_customize){
        'setting' => 'noman_compyright_section',
        'section' => 'noman_footer_option',
     ));
+
+    // theme colors
+    $wp_customize -> add_section('noman_theme_color', array(
+        'title' => __('Theme Color', 'blogsite'),
+        'description' => __('Change theme color as you need from here', 'blogsite')
+    ));
+
+    $wp_customize -> add_setting('noman_bg_color', array(
+        'default' => '#fff',
+    ));
+    $wp_customize -> add_control(new WP_Customize_color_control($wp_customize, 'noman_bg_color',array(
+        'label'=> __('Background Color', 'blogsite'),
+        'section' => 'noman_theme_color',
+        'settings' => 'noman_bg_color'
+    )));
+
+    $wp_customize -> add_setting('noman_primary_color', array(
+        'default' => '#fff',
+    ));
+    $wp_customize -> add_control(new WP_Customize_color_control($wp_customize, 'noman_primary_color',array(
+        'label'=> __('Primary Color', 'blogsite'),
+        'section' => 'noman_theme_color',
+        'settings' => 'noman_primary_color'
+    )));
 };
 
 add_action('customize_register', 'noman_customizer_register');
 
+function noman_theme_color_customize(){
+    ?>
+    <style>
+        body{
+            background: <?php echo get_theme_mod('noman_bg_color'); ?>
+        }
+        :root {
+            --primary: <?php echo get_theme_mod('noman_primary_color'); ?>;
+            }
+    </style>
+    <?php
+};
+
+add_action( 'wp_head', 'noman_theme_color_customize' );

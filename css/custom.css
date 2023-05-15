@@ -1,6 +1,10 @@
 /*=========================
 common css
 ==========================*/
+:root {
+  --primary: #dd055f;
+}
+
 body {
   font-family: "Kaisei Decol", serif;
   font-size: 1rem;
@@ -20,7 +24,7 @@ img {
 }
 
 a.read_more {
-  color: #dd055f;
+  color: var(--primary);
   font-size: 12px;
   text-decoration: navajowhite;
   display: inline-block;
@@ -35,7 +39,7 @@ a.read_more:hover {
 header area css
 ========================*/
 #notice {
-  background: #ff6b6b;
+  background: var(--primary);
   padding: 10px 0;
   color: #fff;
   text-align: center;
@@ -67,7 +71,7 @@ header area css
   text-decoration: none;
 }
 #header_area .col-md-9 ul li a:hover {
-  background: #ea1a70;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -102,7 +106,7 @@ header area css
   color: #262626;
 }
 #header_area .col-md-9 ul li:hover a {
-  background: #ea1a70;
+  background: var(--primary);
   color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -123,7 +127,7 @@ header area css
   left: 200px;
 }
 #header_area .col-md-9 ul li ul li:hover a {
-  background: #ea1a70;
+  background: var(--primary);
   color: #fff;
 }
 #header_area .col-md-9 ul ul li:hover ul li a {
@@ -131,7 +135,7 @@ header area css
   color: #fff;
 }
 #header_area .col-md-9 ul ul li ul li a:hover {
-  background: #ea1a70;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -203,7 +207,7 @@ Index page style
   transition: o.5s;
 }
 #body_area .post_details h2 a:hover {
-  color: #ea1a70;
+  color: var(--primary);
 }
 /*=============================
 Page nav area
@@ -213,7 +217,7 @@ Page nav area
 #page_nav p.pages {
   display: block;
   width: 100%;
-  color: #ea1a70;
+  color: var(--primary);
   padding: 5px 0;
   margin: 0;
 }
@@ -225,7 +229,7 @@ Page nav area
   font-size: 14px;
   color: #fff;
   text-decoration: none;
-  background: #ea1a70;
+  background: var(--primary);
   padding: 4px 9px;
   border-radius: 6px;
 }
@@ -259,7 +263,7 @@ Footer area
   font-size: 15px;
 }
 #copyright_area p a {
-  color: #ea1a70;
+  color: var(--primary);
 }
 #copyright_area p a:hover {
   text-decoration: underline;
