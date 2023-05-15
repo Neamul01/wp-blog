@@ -240,6 +240,12 @@ Page nav area
 /*=============================
 Footer area
 ==============================*/
+#footer {
+  background: #292929;
+  padding: 20px 0;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
 #copyright_area {
   background: #292929;
   padding: 20px 0;
